@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description of your website">
+    <title>CBU CRONIX</title>
+     <style>
+        /* CSS styles here */
+        .body {
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        .containerE {
+            width: 500px;
+            margin: 0 auto;
+        }
+         .speed-display p{
+            text-align: center;
+
+         }
+         .containerE h3{
+            text-align: left;
+         }
+        .speed-display {
+            font-size: 24px;
+            font-weight: bold;
+      
+        }
+        .speed-text p{
+      text-align: center;
+      }
+      .speed-text {
+  animation: move-left 10s linear infinite;
+  /* Adjust these values as needed:
+     - animation-duration: Time it takes to travel across the screen.
+     - animation-timing-function: Choose smooth movement with "linear" or adjust the speed curve.
+     - animation-iteration-count: "infinite" keeps it moving continuously.
+  */
+}
+.logoindex img{
+position: absolute;
+width: 125px;
+padding-bottom: 20px;
+padding-right: 20px;
+}
+
+
+
+@keyframes move-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100vw); /* Move off-screen to the left by the screen width */
+  }
+}
+    </style>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Define the website icon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Include Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
+    <!-- Define an audio element for menu sound -->
+    <audio id="menuSound">
+        <source src="switch-sound.mp3" type="audio/mpeg">
+    </audio>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <div class=" logoindex"> 
+          <img src="IMAGES/1x/Asset 2.png" alt="CBU CRONIX Logo"> 
+
+                </div>
+            </a>
+            <!-- Mobile menu close icon -->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="blog_update.html">BLOG</a></li>
+                    <li><a href="news-update.html">NEWS/UPDATES</a></li>
+                    <li><a href="contact1.html.html">CONTACT</a></li>
+                    <li><a href="monk.html">MONK <br> SOCCER</a></li>
+                    <li><a href="STUDENT/index.html">STUDENT AFFAIRS</a></li>
+                   
+                    <li><a href="Interview1.html">FOCAL FOCUS</a></li>
+                </ul>
+            </div> 
+            <!-- Mobile menu open icon -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>THE CBU CRONIX</h1>
+            <p> 
+                Welcome to Zambia's premier university e-magazine.
+                <br>Our content is updated on a weekly basis, and we ensure that you have the best information at the right time.
+                Whether you're looking for news, insights on courses, or simply some entertainment, we've got you covered.
+            </p>
+            <p>
+                Stay curious, stay informed, and let your academic voyage be more thrilling with every click.
+                Feel free to reach out and connect with us. We're here to feed your curiosity and fuel your aspirations.
+            </p>
+            <a href="contact.html" class="hero-btn">Contact us for more information</a>
+        </div>
+    </section>
+
+    
+
+
+    <!-- Campus Section -->
+    <section class="campus">
+        <h1>Our National  Campus</h1>
+        <p>
+            <i>Beauty is in the eyes of the beholder  </i>.
+        </p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="IMAGES/cbu10.jpeg">
+                <div class="layer">
+                    <h3>KITWE</h3>
+                   
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="IMAGES/cbu3.jpeg">
+                <div class="layer">
+                    <h3>MPIKA</h3>
+                   
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="IMAGES/cbu7.jpeg">
+                <div class="layer">
+                    <h3>NDOLA</h3>
+                
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="IMAGES/cbu2.jpeg">
+                <div class="layer">
+                    <h3>LUSAKA</h3>
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Your content goes here 
+ <hr> <h3 style="text-align: center;" >Earth's Rotation Speed</h3>
+
+<div class="containerE">
+        
+        <div style="font-size: larger;" class="speed-display">
+            <p class="speed-text">Loading...</p>
+        </div>
+    </div>   <hr>   
+     -->
+        
+
+
+    <section class="facilities">
+        <h1 style="color: blue;font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+        'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"
+        ,> NEWS HEADLINES </h1>
+
+        
+
+
+    <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;padding-top: 80px; text-align: center;">Gone But not forgotten</h2>
+
+    <section class="Ending">
+             <div class="facilities-col">
+                <img src="ACC_IMG/mafishi.jpg">
+    <div class="thus"> 
+  <p style="text-align: left;" > By Robinson Zimba</p>
+    </div>
+  </section>
+       
+        <div class="row">
+                            <section class="text">
+    <!-- Your content goes here -->
+
+    <div class="pagination">
+        <a href="acc_wr3.html" id="nextPageBtn">Go to Page</a>
+    </div>
+</section>
+           
+        </div>
+    </section>
+
+
+
+    <h2 style="font-family: 'Times New Roman', Times, serif;padding-top: 80px; text-align: center;">Debut book hits your screens. <br> A book for everyone and 
+    No one </h2>
+            <p style="text-align: center;"> Thus spoke Zara Chabby,Check out the yet to be aclaimed book of the super monk.</p>
+      
+    <section class="Ending">
+             <div class="facilities-col">
+                <img src="IMAGES/download.jpeg">
+    <div class="thus">
+  <p style="text-align: left;"> By Chabota Luputa </p>
+    </div>
+  </section>
+       
+        <div class="row">
+                            <section class="text">
+    <!-- Your content goes here -->
+
+    <div class="pagination">
+        <a href="books_onfire0.html" id="nextPageBtn">Go to Page</a>
+    </div>
+</section>
+           
+        </div>
+    </section>
+
+
+     <h2 style=  "text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;padding-top: 80px;">Man of the Year ,Tonga Bull</h2>
+        <p style="color: black; font-size: 18px; text-align: center;" > An exclusive interview with Martin Mwiinga,who did more in one year than several monks did i a decade.</p>
+           <section class="Ending">
+             <div class="facilities-col">
+<div style="width: 250px;position: relative;
+margin-left: auto;margin-right: auto;" class="acc_img1">             
+        <img src="STUDENT/Images/tongabullh.jpg"> 
+            </div>
+    <div class="thus">
+  <p style="text-align: left;"> By Dumbo Phatson </p>
+    </div>
+  </section>
+       
+        <div class="row">
+                            <section class="text">
+    <!-- Your content goes here -->
+
+    <div class="pagination">
+        <a href="STUDENT/index.html" id="nextPageBtn">Go to Page</a>
+    </div>
+</section>
+           
+
+<h2 style=  "text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;padding-top: 80px;">POEMS </h2>
+        <p style="color: black; font-size: 18px; text-align: center; font-size: larger;" > Read illuminating and lifting poems writing by a vast sea of 
+            amazing poets.</p>
+           <section class="Ending">
+             <div class="facilities-col">
+<div style="width: 250px;position: relative;
+margin-left: auto;margin-right: auto;" class="acc_img1">             
+        <img src=""> 
+            </div>
+    <div class="thus">
+  <p style="text-align: left; color: blueviolet; font-size: larger;"> <b> By The Dead Poets Society </p>
+    </div
+  </section>
+       
+        <div class="row">
+                            <section class="text">
+    <!-- Your content goes here -->
+
+    <div class="pagination">
+        <a href="STUDENT/index.html" id="nextPageBtn">Go to Page</a>
+    </div>
+</section>
+
+<h2 style=  "text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;padding-top: 80px;">CAMPUS GIST</h2>
+        <p style="color: black; font-size: 18px; text-align: center;font-style: italic;" > Who is the tallest moma on campus?,<br> Whose the new God Father,<br>
+        this and many more storie's in the belly of the Campus Gist.   </p>
+             <div class="facilities-col">
+<div style="width: 250px;position: relative;
+margin-left: auto;margin-right: auto;" class="acc_img1">             
+        <img src=""> 
+            </div>
+   
+       
+        <div class="row">
+                            <section class="text">
+    <!-- Your content goes here -->
+
+    <div class="pagination">
+        <a href="STUDENT/index.html" id="nextPageBtn">Go to Page</a>
+    </div>
+</section>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+       
+
+    <section class="testimonials">
+        <h1>What's on the ground</h1>
+        <p>
+            Word on campus.
+        </p>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="IMAGES/cbu14.jpg">
+                <div>
+                    <p>"CBU CRONIX seems to be a companion for curious minds."</p>
+                    <h3>Sarah Zulu</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                
+                
+            </div>
+            <div class="testimonials-col">
+                <img src="IMAGES/cbu13.jpg">
+                <div>
+                    <p>"Spice your life."</p>
+                    <h3>Ebenezer Kaluba</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+
+            </div>
+             </div>   
+              </section>    
+            
+        
+  
+
+    <section class="cta">
+        <h1>Enroll for our various online courses anywhere from</h1>
+        <a href="#" class="hero-btn">CONTACT US</a>
+    </section>
+    
+    <!-- Footer Section -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <!-- Footer Section -->
+    <section class="footer">
+        
+        <p>Connect with us on social media:</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <p>Made with <i class="fab fa-gratipay"></i> by a friendly neighborhood programmer</p>
+    </section>
+    
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+        /* JavaScript code here */
+        const speedText = document.querySelector('.speed-text');
+        const baseSpeed = Math.floor(1674.4); // Extract whole number part of speed
+
+        function updateSpeed() {
+            const randomDigits = Math.floor(Math.random() * 900) + 100; // Generate random 3-digit number
+            const lastThreeDigits = randomDigits.toString().padStart(3, '0'); // Ensure 3 digits with leading zeros
+            speedText.textContent = `Earth's Rotation Speed: ${baseSpeed}.${lastThreeDigits} km/h`;
+        }
+
+        updateSpeed(); // Initial display
+        setInterval(updateSpeed, 1000); // Update every second (adjust as needed)
+    
+        
+    </script>
+</body>
+
+</html>
