@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description of your website">
+    <title>CBU CRONIX</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Define the website icon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Include Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Define an audio element for menu sound -->
+    <audio id="menuSound">
+        <source src="switch-sound.mp3" type="audio/mpeg">
+    </audio>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <!-- <img src="IMAGES/logo.png" alt="CBU CRONIX Logo"> -->
+            </a>
+            <!-- Mobile menu close icon -->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="blog_update.html">BLOG</a></li>
+                    <li><a href="news-update.html">NEWS/UPDATES</a></li>
+                    <li><a href="contact1.html.html">CONTACT</a></li>
+                    <li><a href="sports.html">SPORTS</a></li>
+                    <li><a href="sudentaffairs.html">STUDENT AFFAIRS</a></li>
+                    <li><a href="focal focus.html">FOCAL FOCUS</a></li>
+                </ul>
+            </div>
+            <!-- Mobile menu open icon -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1> CONTACT</h1>
+    </section>
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="IMAGES/cbu10.jpeg" alt="Blog Image">
+                <section class ="location">   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15562.305820196832!2d28.23476668826465!3d-12.805981645263508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x196ce605eca5524d%3A0xfbb3502bc576f8e4!2sKitwe!5e0!3m2!1sen!2szm!4v1699953642405!5m2!1sen!2szm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  </section>
+                <section class="row">
+                
+                </section>
+                
+                <section class="contact-us">
+                    <div class="row">
+                        <div class="contact-col">
+                            <div>
+                                <i class="fa fa-home"></i>
+                                <span>XYZ Road, ABC Building</span>
+                                <p>Jumbo Drive, Kitwe</p>
+                            </div>
+                            <div>
+                                <i class="fa fa-phone"></i>
+                                <span>+260 974 228 418 </span>
+                                <p>Monday to Friday, 10AM to 6PM</p>
+                            </div>
+                            <div>
+                                <i class="fa fa-envelope"></i>
+                                <span>i@ererdfgmail.com</span>
+                                <p>Email us</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                            <div class="contact-col" > 
+                         <form action="form-handler.php" method="post">
+                             <input type="text" name="name" placeholder="Enter your Name" required> 
+                             <input type="email"  name="email"   placeholder="Enter your Email Adrress" required> 
+                             <input type="text"  name="subject"  placeholder="Enter your concern" required>      
+                               <textarea rows="8"  name="message"  placeholder="Message"required > 
+
+                               </textarea>
+                                 <button type="submit" class="hero-btn red-btn "> Send Message</button>  
+                               </form>                                                       
+                             </div>
+                             </div>   
+                               </section>      
+    <!-- Footer Section -->
+    <section class="footer"> 
+        <h4>About Us</h4>
+        <!-- Footer Section -->
+        <section class="footer">
+            <p>Connect with us on social media:</p>
+            <div class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <p>Made with <i class="fab fa-gratipay"></i> by a friendly neighborhood programmer</p>
+        </section>
+    </section>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
