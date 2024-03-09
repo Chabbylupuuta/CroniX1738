@@ -1,0 +1,1486 @@
+/* Reset CSS and font family */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header styling */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(IMAGES/views2.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center; font-weight: bold; text-shadow: #2477a7;
+}
+
+.nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #2771e0;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* Text box styling */
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 32px; /* Adjusted font size for better mobile view */
+}
+
+.text-box p {
+    margin: 10px 0 30px; /* Adjusted margin and font size */
+    font-size: 18px; /* Adjusted font size */
+    font-weight: 200;
+    color: #fff; 
+}
+.logoindex img{
+    width: 120px;
+    position: left;
+}
+/* Hero button styling */
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 26px; /* Adjusted padding for better mobile view */
+    font-size: 14px; /* Adjusted font size */
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Hover effect for hero button */
+.hero-btn:hover {
+    border: 1px solid #2477a7;
+    background: #2477a7;
+    transition: 0.5s;
+}
+
+/* Font Awesome icons for mobile menu (initially hidden) */
+nav .fa {
+    display: none;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #122f5a;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 2s;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+/* Course section styling */
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px; ; }
+
+ h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+ p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    padding: 7px;
+}
+
+/* Add more sections or specific styling as needed */
+/* Styling for a row of elements */
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.row h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+/* Styling for individual course columns */
+.course-col {
+    flex-basis: 40%;
+    background: #438bbe;
+    border-radius: 13px;
+    margin-bottom: 10%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    position:relative;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    font-size: 20px;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling for h3 elements inside course columns */
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* Hover effect for course columns */
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}   
+.course-col p{
+    font-style: italic;
+    text-align: center;
+    color: #000000;
+}
+
+/* Media Query for screens with a maximum width of 700px */
+@media (max-width: 700px) {
+    /* Change the flex direction of the row to column */
+    .row {
+        flex-direction: column; text-align: center;
+    }
+}
+/* Styling for the "campus" section */
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus p{
+    font-size: larger;
+    color: #000000;
+}
+/* Styling for individual campus columns */
+.campus-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+}
+/* Styling for images inside campus columns */
+.campus-col img {
+    width: 100%;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(53, 156, 224, 0.555);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+.facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.facilities-col img {
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 35px;
+}
+
+.facilities-col p {
+    font-weight: bold;
+    margin-top: 10px 0 20px; /* Add your desired margin-top value here */
+}
+
+
+.facilities-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-bottom: 20px;
+   
+}
+
+.facilities h1{
+ margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-bottom: 20px;
+   
+}
+.testimonials {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testimonials-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #0a76d560;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonials-col p{
+    color: #000000;
+    font-size: larger;
+}
+.testimonials p{
+    font-size: larger;
+    color: #000000;
+}
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.speed-display {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+.testimonials-col img {
+    height: 40px;
+    margin-left: 5px; 
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.testimonials h1 {
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.testimonials p {
+    text-align: center;
+    text-decoration: solid;
+}
+
+.testimonials-col p {
+    padding: 0;
+}
+
+.testimonials-col h3 {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.testimonials-col .fa {
+    color: #36d8f463;
+}
+
+@media (max-width: 700px) {
+    .testimonials-col img {
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(IMAGES/cbu9.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media (max-width: 700px) {
+    .cta h1 {
+        font-size: 24px;
+    }
+}
+
+/* CTA1*/
+
+.cta1 {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(IMAGES/night.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta1 h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media (max-width: 700px) {
+    .cta1 h1 {
+        font-size: 24px;
+    }
+}
+
+
+
+/* CTA1*/
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}  
+
+
+
+
+.text {
+    /* Your existing styles for the text section */
+
+    position: relative;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin based on your design preferences */
+    padding-top: 20px;
+} 
+.pagination1{
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin based on your design preferences */
+    padding-top: 20px;
+    
+}
+
+#nextPageBtn {
+    background-color: #266d8b;
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    bo.pagination {
+        text-align: center;
+        margin-top: 20px; /* Adjust the margin based on your design preferences */
+        padding-top: 20px;
+    } 
+    .pagination1{
+        text-align: center;
+        margin-top: 20px; /* Adjust the margin based on your design preferences */
+        padding-top: 20px;
+        
+    }
+    
+    #nextPageBtn {
+        background-color: #266d8b;
+        color: white;
+        padding: 15px 40px;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 1s;
+    }rder-radius: 10px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+#nextPageBtn:hover {
+    background-color: #697272fd;
+}
+
+
+
+
+ /* footer */
+
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.icons {
+    color: #2477a7;
+    margin: 10px 13px;
+    cursor: pointer;
+    padding: 18px 10px; /* Adjusted the padding to add space */
+}
+
+
+.fa-heart-o {
+    color: #2477a7;
+}
+
+.footer p{  color: #2477a7;}
+.sub-header {
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(ACC_IMG/zibra*.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+
+
+
+.sub-header h1 {
+    margin-top: 100px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+/*   SUB HEDER ON THE COARSES 2*/
+.sub-header2 {
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(ACC_IMG/zebra2-1024x682.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+
+.sub-header3 {
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("ACC_IMG/Zebra1.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+.paragraph p{
+    color:black ;
+    font-size: larger;
+    padding-top: 30px;
+}
+.coursesh h1{
+    text-align: center;
+}
+.carousel-item img{
+    max-width: 350px;
+    /* Center the image horizontally */
+    display: block; /* Treat the image as a block-level element */
+    margin-left: auto; /* Automatically set left margin to push image to center */
+    margin-right: auto; /* Automatically set right margin to push image to center */
+     height: 530px;
+     width: 580px;
+     padding-top: 30px;
+     padding-bottom: 30px;
+}
+
+.buttun{
+    text-align: center;
+   right: 50%;
+    left: 50%;
+   
+ 
+}
+
+
+.wording p{
+    color: #000000;
+    font-size: 20px;
+}
+
+
+
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-col {
+    flex-basis: 50%;    padding: 30px 2px; /* Adjusted padding */
+}
+
+.about-col img {
+    width: 100%;
+}
+.about-col h1 {
+    padding-top: 0; font-family:'Times New Roman', Times, serif; font-style: oblique;
+    font-size: 30pt;
+    color: 00000;
+}
+
+.about-col p {
+    padding: 15px 0 25px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+    font-size: 18px;
+    scroll-padding-right: 10px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.red-btn {
+    border: 1px solid #2477a7;
+    background: transparent;
+    color: #2477a7;
+}
+
+.red-btn:hover {
+    color: #fff;
+}
+/* Styles for the student header */
+.student-header {
+    background-color: #284b63;
+    background-image: url('your-background-image.jpg'); /* Replace with your actual background image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Set text color to white for better visibility on the background image */
+}
+
+.student-header h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: auto;
+}
+
+.student-header iframe {
+    margin-top: 10%;
+}
+
+/* Responsive styles for screens with a width of 700px or less */
+@media (max-width: 700px) {
+    .student-header {
+        text-align: center; /* Center text within the header */
+    }
+
+    .student-header iframe {
+        max-width: 100%; /* Use 100% to make the iframe responsive */
+        margin: 0 auto; /* Center the iframe horizontally */
+    }
+
+    .ed-btn-container {
+        text-align: center; /* Center the button container */
+    }
+
+    .ed-btn {
+        display: inline-block; /* Change buttons to inline-block to create a boxed layout */
+        width: auto; /* Allow buttons to take the necessary width */
+        margin: 0 10px 10px 0; /* Add space around buttons */
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        color: #0a0a0a;
+        text-align: center; /* Center the text within the button */
+        padding: 10px;
+        background-color: #fff; /* Add background color to buttons for better visibility */
+        border: none;
+        cursor: pointer;
+    }
+
+    .ed-btn:hover {
+        color: #fff;
+        background-color: #284b63; /* Change background color on hover */
+    }
+}
+.course-cou {
+    flex-basis: 40%;
+    background: #f3faff;
+    border-radius: 13px;
+    margin-bottom: 10%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+/* Styling for h3 elements inside course page columns */
+.course-cou h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* Hover effect for course columns */
+.course-cou:hover {
+    box-shadow: 0 0 20px 0px rgba(3, 2, 2, 0.2);
+}
+
+/* Media Query for screens with a maximum width of 700px */
+@media (max-width: 700px) {
+    /* Change the flex direction of the row to column */
+    .row {
+        flex-direction: column;
+    }
+    .course-page h1 {
+        text-align: center;
+        padding-top: 0;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: larger;
+    }
+    
+    .course-page p {
+        text-align: center;
+    }
+    
+    .blog-content {
+        width: 80%;
+        margin: auto;
+        padding: 60px 0;
+    }
+    
+    .blog-left {
+        flex-basis: 65%;
+    }
+    
+    .blog-left img {
+        width: 100%;
+    }
+    
+    .blog-left h2 {
+        color: #222;
+        font-weight: 600;
+        margin: 30px 0; 
+        text-align: center;
+               }
+        .blog-left p {
+            color: #131111;
+            padding: 10%;
+             margin-top:5px;
+        }
+        
+        .text-blog p { 
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+            padding-top: 5%;
+            color: #000000;
+            line-height: 1.6;
+             }  
+
+        .text-blog h2 {
+          text-align: center;
+          color: #122f5a;
+        }
+
+      /* Reset the default styles for anchor tags within buttons */
+.blog-right button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blog-right button {
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px; /* Adjust as needed */
+}
+
+.blog-right button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+
+/* Existing styles */
+
+/* Responsive styles for screens smaller than 768px */
+@media screen and (max-width: 700px) {
+    .blog-right button {
+        width: 100%; /* Make the buttons full-width */
+        margin-right: 0; /* Remove right margin */
+    }
+
+       
+
+
+
+
+
+
+}    
+
+      .blog-img1 {
+       text-align: center;
+       width:20px;
+      }  
+	  .blog_img23 img{
+		  width:500px;
+	  }
+	  .blog_img24 img{
+		  position:center;
+	  }
+	  
+	  .blog_img22 img{
+		  width:500px;
+	  }
+/* SPORTS*/      
+   .sports_words p{
+    color: whitesmoke;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: #000000;
+   }   
+
+
+        
+    /* DEAD POETS 1 */
+
+
+    .blog_text3 h2{
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        color: #2477a7;
+        font-weight: 300;
+        font-style: italic;
+    } 
+    .blog_text3 p{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         color: #000000;
+
+          }
+          .poet1{
+            text-align: center;
+             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: larger;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+         .llist {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  text-align: left;
+  margin-top: 20px; /* Add space above the list */
+  line-height: 2.5; /* Adjust vertical spacing */
+  list-style-type: square; /* Change bullet style */
+  padding: 5px; /* Add space around content */
+  color: #333; /* Set text color */
+  background-color: #f5f5f5; /* Set background color */
+  border: 1px solid #276b92; /* Add a border */
+  border-radius: 5px; /* Round corners */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  padding-bottom: 30px;
+}
+
+.llist li:hover { /* Style for hovering over items */
+  background-color: #eee;
+  cursor: pointer;
+}
+
+
+      /* BOOKS SECTION */
+      .Front_page h1, .Front_page p,.Front_page h2 { 
+         
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+      }  
+
+      .chap1 p{ 
+        text-decoration: solid;
+        font-style:oblique;
+        color: #2771e0;
+	  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+	  }
+
+
+      .chap3 p{
+		   text-decoration: solid;
+        font-style:oblique;
+        color: #gold;
+	    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+		
+	  } 
+	  
+	  
+	  
+      .chap2{
+        color: #000000;
+      }
+
+    .chap3{
+         color: #2771e0;
+        text-align: center;
+    }
+
+
+       
+      .thus p {
+        font-family: monospace;
+        font-weight: 200;
+        text-align: right;
+        color: #000000;
+      }
+
+
+
+
+
+
+     
+      .Front_page h2 {
+
+
+        font-style: italic;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+
+
+
+      }
+.sportdisplay p{
+    margin: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    white-space: pre-wrap;
+   line-height: 1.5; /* Sets line height to 1.5 times the font size */
+    
+}
+
+
+
+
+
+.blog-header1 p {
+    font-size: 20px;
+    font-style: italic;
+}
+    .blog-header h1, .blog-header p1 { 
+        text-align: center;
+        font-size: 20px;
+
+    }
+     .blog-writting p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #000000;
+     }
+    .blog-right {
+        flex-basis: 32%;
+    }
+    
+    .blog-right h3 {
+        background: #122f5a;
+        color: #fff;
+        padding: 7px 0;
+        font-size: 16px;
+        margin-bottom: 20px;
+        padding-top: 25px;
+    }
+    
+    .blog-right div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #555;
+        padding: 8px;
+        box-sizing: border-box;
+       
+        
+    }
+        
+
+
+    .blog-writting p{
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        color: #000000;
+        font-style: italic;
+        font-weight: 300;
+
+    } 
+    
+    .blog3 p{
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        font-weight: 100;
+        color: #000000;
+        font-size: 20px;
+    }
+   .blog3 h2{
+    text-align: center;
+    color: #2980b9;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+   .blog3 h4{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #2771e0;
+    font-size: large;
+   }
+
+
+.listali {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.quote-section {
+    width: 100%;
+    margin-bottom: 30px;
+  
+}
+
+.quote-list {
+    list-style: none;
+    padding: 0;
+}
+
+.quote-list li {
+    margin-bottom: 10px;
+
+}
+
+
+
+/* Add additional styling as needed */
+  
+
+
+
+
+
+
+   /* BOOKS SECTION  END*/
+
+
+
+    /* ACCADEMIC WRITING HTML PAGE */
+
+    .blue-dot::before {
+  content: "";
+  display: inline-block;
+  width: 10px; /* Increased size to 10px */
+  height: 10px; /* Increased size to 10px */
+  border-radius: 50%;
+  background-color: blue;
+  margin-right: 4px; /* Adjusted spacing for larger dot */
+  vertical-align: middle; /* Ensure dot aligns with first letter */
+ 
+}
+
+
+
+
+     /* ACCADEMIC post 1 */
+    .acc1 h1 { 
+       font-family: 'Times New Roman', Times, serif;
+    }
+    .acc1 p{
+        text-align: center;
+        font-style: normal;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-top: 5px;
+    } 
+    .acc1_1 p{
+        font-style: italic;
+          color:#000000;
+          font-family: 'Times New Roman', Times, serif;
+
+
+    }
+    .keyword p{
+        font-size: 15px;
+        font-weight: bolder;
+    }  
+
+ .acc_img1 img{
+    max-width: 350px;
+    margin: block;
+    padding-left: 40px;
+    position: center;
+      height: auto; /* Allow for image height variation */
+      margin-left: auto;
+   margin-right: auto;
+
+ }
+
+
+    .acc_img11 img{
+       
+        width: 420px;
+
+    }
+	.acc_img2 img{
+       
+        width: 420px;
+
+    }
+	
+
+    .blog_img111 img{
+        height: 500px;
+        width: 420px;
+    }   
+
+    .blog_img21 img{
+        width: 420px;
+    }  
+
+    .blog_img22{
+        width: 420px;
+    }
+     /* --------------------- */
+       
+
+     /* ACCADEMIC post 2 */
+    .acc2{
+        text-align: left;
+    }
+       .acc_img2 img {
+        height: 500px;
+        width: 400px;
+        position: center;
+       } 
+
+ /* ACCADEMIC post 3 */
+
+    .acc3{
+        text-align: left;
+    }
+      /* --------------------- */
+
+     /* ACCADEMIC post 4 */
+    .acc4{ 
+        text-align: left;
+    }  
+     /* --------*/
+
+
+ /* ACCADEMIC post 5 */
+    .acc5{
+        text-align: left;
+    } 
+
+     /* --------------------- */
+  /* ACCADEMIC post 6 */
+    .acc6 p{
+        text-align: left;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    } 
+   .acc6T p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+     sans-serif;
+   }
+     /* --------------------- */
+     
+
+  /* --------------------- */
+
+
+.poet{
+font-size: 20px;
+color: azure;
+}
+.poet2 p,.poet h2{
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 20px;
+padding-top: 20px;
+color: #0a0a0a;
+}
+.poet3 p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: black;
+}
+
+.poems3 h3{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.testimonials-col1 img {
+  height: 110px;
+  margin: 5px 30px;
+  border-radius: 50%;
+}
+
+.testimonials1 h1 {
+  text-align: center;
+  font-style: italic;
+  font-weight: bolder;
+  color: #d4af37; /* Golden yellow for heading */
+}
+
+.testimonials1 p {
+  text-align: center;
+  text-decoration: none;
+  color: #d4af37; /* Golden yellow for text */
+ 
+}
+
+.testimonials-col1 {
+  flex-basis: 44%;
+  border-radius: 10px 0 50px;
+  margin-bottom: 5%;
+  text-align: left;
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+ width: 300px;
+ padding-left: 10px;
+ position: reelative;
+ margin-left: auto;
+ margin-right: auto;
+  /* Background with gold gradient and semi-transparency */
+  background: linear-gradient(to right, #d4af37, #f2d087);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9; /* Adjust opacity as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonials-col1:hover {
+  background-color: rgba(242, 208, 135, 0.8); /* Brighter gold on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials-col1 h3 {
+  font-family: "Roboto Slab", serif; /* Choose a suitable font */
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333; /* Darker contrast for readability */
+}
+
+.testimonials-col1 p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333; /* Darker contrast for readability */
+}
+
+.testimonials-col1 .icon {
+  margin-left: 20px;
+  color: #333; /* Darker contrast for readability */
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonials-col1:hover .icon {
+  transform: scale(1.1);
+}
+
+
+  /* --------------------- */
+
+
+
+
+
+     .comment-box {
+        border: 1px solid #ccc;
+        margin: 50px 0;
+        padding: 10px 20px;
+    }
+   
+    .comment-box h3 {
+        text-align: left;
+    }
+    
+   
+      .comment-form input,.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+.comment-form button {
+    margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+    .sub-header h1 {
+        font-size: 24px;
+    }
+}
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe {
+    width: 100%;
+}
+
+.contact-us {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa {
+    font-size: 28px;
+    color: #2477a7;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-col input,
+.contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+} 
+
+
+ /* NEWS PAGE  */
+
+
+
+
+
+ 
+
+
+ 
+
+ /* NEWS HEADER END */
+
+
+
+
+
+
+
+
+
+.NEWS-content {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.NEWS-left {
+    flex-basis: 65%;
+}
+
+.NEWS-left img {
+    width: 100%;
+}
+
+.NEWS-left h2 {
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0; }
+
+    .NEWS-left p {
+        color: #999;
+        padding: 10%; margin-top:5px;
+    }
+      
+    
+.NEWS-right {
+    flex-basis: 32%;
+}
+
+.NEWS-right h3 {
+    background: #122f5a;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.NEWS-right div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    padding: 8px;
+    box-sizing: border-box;
+}  .cloud-icon::before {
+    content: "\2600"; /* Unicode character for a cloud */
+    
+}
+
+.sun-icon::before {
+    content: "\2600"; /* Unicode character for a sun */
+    
+
+}
+
+/* Add this to your CSS for styling the icons */
+.sun-icon {
+    color: orange; /* Set the sun icon color to orange */
+}
+
+.rain-icon {
+    color: grey; /* Set the rain cloud color to grey */
+}
+
+.rain-icon:before {
+    content: '\00a0\u00a0\u00a0'; /* Add some space before the raindrops */
+    color: blue; /* Set the raindrop color to blue */
+}
