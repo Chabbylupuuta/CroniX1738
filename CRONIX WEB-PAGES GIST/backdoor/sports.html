@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description of your website">
+    <title>CBU CRONIX</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Define the website icon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Include Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
+    <!-- Define an audio element for menu sound -->
+    <audio id="menuSound">
+        <source src="switch-sound.mp3" type="audio/mpeg">
+    </audio>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <img src="IMAGES/logo.png" alt="CBU CRONIX Logo">
+            </a>
+            <!-- Mobile menu close icon -->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">COURSES</a></li>
+                    <li><a href="#">BLOG/UPDATE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">SPORTS</a></li>
+                    <li><a href="#">STUDENT AFFAIRS</a></li>
+                    <li><a href="#">FOCAL FOCUS</a></li>
+                </ul>
+            </div> 
+            <!-- Mobile menu open icon -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>THE CBU CRONIX</h1>
+            <p>
+                Welcome to Zambia's premier university e-magazine.
+                <br>Our content is updated on a weekly basis, and we ensure that you have the best information at the right time.
+                Whether you're looking for news, insights on courses, or simply some entertainment, we've got you covered.
+            </p>
+            <p>
+                Stay curious, stay informed, and let your academic voyage be more thrilling with every click.
+                Feel free to reach out and connect with us. We're here to feed your curiosity and fuel your aspirations.
+            </p>
+            <a href="contact.html" class="hero-btn">Contact us for more information</a>
+        </div>
+    </section>
+
+    <!-- Course Section -->
+    <section class="course">
+        <h1>Quote of the week</h1>
+        <p>Life is really simple, but we insist on making it complicated.<br>Confucius</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Romans 15:13 (NIV)</h3>
+                <p>"May the God of hope fill you with all joy and peace as you trust in Him,<br>so that you may overflow with hope by the power of the Holy Spirit."</p>
+            </div>
+            <div class="course-col">
+                <h3>[Quran 2:286]</h3>
+                <p>“Allah does not burden a soul beyond that it can bear.”</p>
+            </div>
+            <div class="course-col">
+                <h3>Word of the Week: Serendipity</h3>
+                <p>
+                    Definition: Serendipity means finding valuable or pleasant things by chance.
+                    <br>Example Sentence: <br>"Their serendipitous meeting at the park brought joy to both."
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Upcoming Events</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Section -->
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Officiis excepturi, unde suscipit aut voluptatem quidem quibusdam aliquam nesciunt atque officia, impedit totam eum, quos nemo.
+            Dolores necessitatibus sint nisi a.
+        </p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="IMAGES/cbu10.jpeg">
+                <div class="layer">
+                    <h3>KITWE</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="IMAGES/cbu3.jpeg">
+                <div class="layer">
+                    <h3>MPIKA</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="IMAGES/cbu7.jpeg">
+                <div class="layer">
+                    <h3>NDOLA</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="IMAGES/cbu2.jpeg">
+                <div class="layer">
+                    <h3>LUSAKA</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse omnis fugit cumque explicabo expedita dolore.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="IMAGES/cbu3.jpeg">
+                <h3>Monk on fire</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad mollitia totam perspiciatis quaerat ratione.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="IMAGES/q1.jpeg">
+                <h3>Philosopher of the week</h3>
+                <p>Name: Lao Tzu <br>Book: Tao Te Ching.<br> Meaning: Self-awareness and self-control are the keys to wisdom and strength, according to Lao Tzu. It's about understanding yourself, not others. </p>
+            </div>
+            <div class="facilities-col">
+                <img src="IMAGES/cbu3.jpeg">
+                <h3>Moma of the week</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, expedita aliquam officia odit rem.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h1>What's on the ground</h1>
+        <p>
+            Word on campus.
+        </p>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="IMAGES/cbu14.jpg">
+                <div>
+                    <p>"CBU CRONIX seems to be a companion for curious minds."</p>
+                    <h3>Sarah Zulu</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                
+                
+            </div>
+            <div class="testimonials-col">
+                <img src="IMAGES/cbu13.jpg">
+                <div>
+                    <p>"CBU CRONIX seems engaging enough for my likes, and I am picky with what I like."</p>
+                    <h3>Ebenezer Kaluba</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h1>Enroll for our various online courses anywhere from</h1>
+        <a href="#" class="hero-btn">CONTACT US</a>
+    </section>
+    
+    <!-- Footer Section -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <!-- Footer Section -->
+    <section class="footer">
+        
+        <p>Connect with us on social media:</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <p>Made with <i class="fab fa-gratipay"></i> by a friendly neighborhood programmer</p>
+    </section>
+    
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
