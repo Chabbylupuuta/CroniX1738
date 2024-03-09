@@ -1,0 +1,550 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <title> Monk Soccer</title>
+    <style>
+      .styled-table{ 
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+         min-width: 400px;
+         box-shadow: 0 0 20px rgba(0,0,0,0.15) ;
+         margin-left: 88px;
+
+      }
+      .styled-table thead tr{
+        background-color:#1f68bb ;
+        color: #fff;
+        text-align: left;
+      }
+      .styled-table th,
+        .styled-table td{
+           padding: 12px 15px;
+        }
+      .styled-table tbody tr {
+          border-bottom: 1px solid #dddd;
+      }
+      .styled-table tbody tr:nth-of-type(even){
+        background-color: azure;
+
+      } 
+      .styled-table tbody tr :last-of-type{
+        border-bottom: 2px solid #08406e66 ;
+      }
+      .styled-table tbody tr.active-row{
+        font-weight: bold;
+        color: white;
+        background-color: #000000;
+      }
+      .container .content{
+        position:absolute;
+        background: rgba(0,0,0,0.18);
+        color: aliceblue;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        top: 264px;
+
+      }
+      /* Add styles for upcoming matches, versus cards, and past matches */
+        .match-section {
+            background: rgba(0, 0, 0, 0.18);
+            color: aliceblue;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .match-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .team-logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+    </style>
+
+    <meta charset="UTF-8">
+ <meta name="viewport"content="width=device-width, initial-scale=1.0">
+  </head>
+<body style="background-image: url('CBU_PrincipalOfficer/blue.jpg'); > 
+  <div class="container">
+
+
+   
+
+
+    <img src="FLOGO/cbu-premiere-league-PNG.png" style="width: 85%;display: block; margin-left: auto;margin-right: auto;">
+   </div>
+   <!----UPCOMING FIXTURES-->
+   <!---
+    <section class="match-section">
+        <h2 style="color: purple; font-style: italic;" >MATCH WEEK ONE  </h2>
+
+        <div class="match-card">
+            <img src="FLOGO/BEng-broz-logo.png" alt="Team Logo" class="team-logo">
+            <span style="font-size: 20px;color: #000000; font-size: small;"> <b>BENG   BROS  vs BANKERS FC</b></span>
+                        <img src="FLOGO/Bankers-Logo-300x300-2-128x128.png" alt="Team Logo" class="team-logo">
+            </div>     
+            <p> THEN </p>
+        
+        <div class="match-card  " style="padding-top: 20px;">
+            <img src="FLOGO/BBA-FC-logo-official-126x128.png" alt="Team Logo" class="team-logo">
+            <span style="font-size: 20px;color: #000000;font-size: small;"> <b>BBA-BAC MKT vs MAGMA FC</b></span>
+                        <img src="FLOGO/Magma united.jpg" alt="Team Logo" class="team-logo">
+         </div>
+         <p> THEN CAMES </p>
+         <div class="match-card  " style="padding-top: 20px;">
+            <img src="FLOGO/BEng-broz-logo.png" alt="Team Logo" class="team-logo">
+            <span style="font-size: 20px;color: #000000;font-size: small;"> <b>BENG   BROS  vs BANKERS FC</b></span>
+                        <img src="FLOGO/Bankers-Logo-300x300-2-128x128.png" alt="Team Logo" class="team-logo">
+         </div>
+         <p> ALSO </p>
+         <div class="match-card  " style="padding-top: 20px;">
+            <img src="FLOGO/BEng-broz-logo.png" alt="Team Logo" class="team-logo">
+            <span style="font-size: 20px;color: #000000;font-size: small;"> <b>BENG   BROS  vs BANKERS FC</b></span>
+                        <img src="FLOGO/Bankers-Logo-300x300-2-128x128.png" alt="Team Logo" class="team-logo">
+         </div>
+        
+        <!-- Add more match cards as needed... -->
+    </section>-->
+
+    <!----PAST MATCHES-->
+
+<!---
+    <section class="match-section">
+        <h2>Past Matches</h2>
+        <div class="match-card">
+            <img src="path-to-team-logo.png" alt="Team Logo" class="team-logo">
+            <span>Team A vs Team B</span>
+            <span>Result: Team A 2 - 1 Team B</span>
+        </div>
+        <!-- Add more past match cards as needed... -->
+    </section>-->
+
+
+
+
+  <div class="content">
+    <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif;color: #1f68bb;text-emphasis-position: center;"> MONK SOCCER LEAGUE TABLE 2024</h1>
+  </div>
+<table class="styled-table"> 
+  <thead>
+    <tr>
+
+      <th> POSITION</th>
+      <th> TEAM</th>
+      <th> TEAM <br> NAME </th>
+     <th> PLAYED</th>
+      <th>WON </th>
+      <th> LOST</th>
+      <th> DRAW </th>
+      <th> GOALS SC</th>
+      <th> GOAL DIFF</th>
+      <th> POINTS</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="active-row" > 
+      <td style="font-style: oblique; color: tomato;"> 1</td>
+       <td> <img src="FLOGO/BBA-FC-logo-official-126x128.png" height="50" width="70"</td>
+       <td  style="color: darkorange;">BBA BAC <br> MK</td>
+       <td  style="color: darkgoldenrod;"> 5</td>
+       <td  style="color: darkgoldenrod;"> 4</td>
+       <td  style="color: darkgoldenrod;"> 0</td>
+       <td  style="color: darkgoldenrod;"> 2</td>
+       <td  style="color: darkgoldenrod;"> 14</td>
+       <td style="color: darkgoldenrod;"> 13</td>
+       <td style="color: darkgoldenrod;"> 13</td>
+
+     </tr>
+
+   
+      <td style="font-style: oblique;"> 2</td>
+       <td> <img src="FLOGO/BEng-broz-logo.png" height="50" width="70"</td>
+       <td style="color: black;">BENG <br> BR</td>
+       <td> 4</td>
+       <td> 4</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 9</td>
+        <td> 12</td>
+
+     </tr>
+      <td style="font-style: oblique;"> 3</td>
+       <td> <img src="FLOGO/logo_2-removebg-preview-128x85.png" height="50" width="70"</td>
+       <td style="color: black;">SBE  <br> BULLETS</td>
+       <td> 5</td>
+       <td> 4</td>
+       <td> 0</td>
+        <td>1</td>
+       <td> 0</td>
+        <td> 5</td>
+        <td> 12</td>
+
+        
+        </tr>
+      <td style="font-style: oblique;"> 4</td>
+       <td> <img src="FLOGO/mineralboys.png" height="50" width="70"</td>
+       <td style="color: black;">MINERAL <br> BOYS</td>
+       <td> 4</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 20</td>
+       <td> 10</td>
+
+     </tr>
+      <td style="font-style: oblique;"> 5</td>
+       <td> <img src="FLOGO/BINARYFC.jpeg" height="50" width="70"</td>
+       <td style="color: black;">BINARY  <br> FC</td>
+       <td> 4</td>
+       <td> 2</td>
+       <td> 0</td>
+       <td> 2</td>
+       <td> 0</td>
+       <td> 10</td>
+       <td> 8</td>
+
+     </tr>
+     <!--- 
+      <td style="font-style: oblique;"> 6</td>
+       <td> <img src="FLOGO/BEng-5-FC-logo-official-126x128.png" height="50" width="70"</td>
+       <td style="color: black;">BRAIN <br> FUSE</td>
+       <td> 4</td>
+       <td> 1</td>
+       <td> 0</td>
+       <td> 3</td>
+       <td> 0</td>
+       <td> 2</td>
+       <td> 7</td>
+
+     </tr>
+     
+      <td style="font-style: oblique;"> 7</td>
+       <td> <img src="FLOGO/SNR-FC-logo-official-126x128.png" height="50" width="70"</td>
+       <td style="color: black;">SNR <br> FC</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+
+     </tr>
+      <td style="font-style: oblique;"> 8</td>
+<td> <img src="FLOGO/All-stars-logo-128x128.jpeg" height="50" width="70"</td>      
+       <td style="color: black;">ALL STARS <br> FC</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+
+     </tr>
+      <td style="font-style: oblique;">  9</td>
+<td> <img src="FLOGO/SBE-United-FC-logo-official-128x128.png" height="50" width="70"</td>      
+       <td style="color: black;">SBE <br> UNITED</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+
+     </tr>
+        <td style="font-style: oblique;"> 10</td>
+<td> <img src="FLOGO/Shi-Mine-FC-logo-official-126x128.png" height="50" width="70"</td>      
+       <td style="color: black;">SHI-MINE<br> FC</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+
+     </tr>
+        <td style="font-style: oblique;"> 11</td>
+<td> <img src="FLOGO/Mojo-fc-logo-300x300-1-128x128.png" height="50" width="70"</td>       
+       <td style="color: black;">MOJO <br> FC</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+
+     </tr>   
+       <td style="font-style: oblique;"> 12</td>
+<td> <img src="FLOGO/logo_2-removebg-preview-128x85.png" height="50" width="70"</td>       
+       <td style="color: black;">SBE  <br> BULLETS</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+
+     </tr>     
+       <td style="font-style: oblique;"> 13</td>
+<td> <img src="FLOGO/Gallant-FC-Logo-official-126x128.png" height="50" width="70"</td>      
+       <td style="color: black;">GALLENT <br> FC</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+      <td> 0</td>
+
+     </tr>     
+ <td style="font-style: oblique;"> 14</td>
+<td> <img src="FLOGO/Bankers-Logo-300x300-2-128x128.png" height="50" width="70"</td>       
+       <td style="color: black;">BANKERS <br> FC</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+
+     </tr>
+     <td style="font-style: oblique;"> 15</td>
+<td> <img src="FLOGO/Magma united.jpg" height="50" width="70"</td>       
+       <td style="color: black;">MAGMA<br> FC</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+
+     </tr>
+     <td style="font-style: oblique;"> 16</td>
+<td> <img src="FLOGO/Magma united.jpg" height="50" width="70"</td>       
+       <td style="color: black;">ECONOMICS<br> FC</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+
+     </tr>
+     <td style="font-style: oblique;"> 17</td>
+<td> <img src="FLOGO/Magma united.jpg" height="50" width="70"</td>       
+       <td style="color: black;">ALUMNI<br> FC</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+
+     </tr>
+     <td style="font-style: oblique;"> 18</td>
+<td> <img src="FLOGO/Magma united.jpg" height="50" width="70"</td>       
+       <td style="color: black;">X<br> UNITED</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+
+     </tr>
+     <td style="font-style: oblique;"> 19</td>
+<td> <img src="FLOGO/Magma united.jpg" height="50" width="70"</td>       
+       <td style="color: black;">BRAINFUSE<br> FC</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+
+     </tr>
+     <td style="font-style: oblique;"> 20</td>
+<td> <img src="FLOGO/Magma united.jpg" height="50" width="70"</td>       
+       <td style="color: black;">BSP<br> FC</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+
+     </tr>
+     <td style="font-style: oblique;"> 21</td>
+<td> <img src="FLOGO/Magma united.jpg" height="50" width="70"</td>       
+       <td style="color: black;">SUPA MONKS<br> FC</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+        </tr>
+        <td style="font-style: oblique;">22</td>
+<td> <img src="FLOGO/Magma united.jpg" height="50" width="70"</td>       
+       <td style="color: black;">SBE<br> PANTHERS</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+       <td> 0</td>
+
+     </tr>
+
+
+    -->
+
+  </tbody>
+
+</table>
+
+
+
+<!---TOP SCORERS SECTION 
+<section class="Pranking">
+  <div class="Pranking">
+    <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: left; color:
+     #1f68bb; padding-top: 50px;"> TOP SCORER</h2>
+     <table class="styled-table"> 
+  <thead>
+    <tr>
+
+      <th> POSITION</th>
+      <th> TEAM</th>
+      <th> PLAYER</th>
+      <th>#GOALS </th>
+      
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="active-row" > 
+      <td style="font-style: oblique; color:orangered;"> 1</td>
+       <td> <img src="FLOGO/SOM-Stars-logo-official-126x128.png" height="50" width="70"</td>
+       <td  style="color: darkgoldenrod;"> </td>
+       <td  style="color: darkgoldenrod;"> 0</td>
+     
+        </tr>
+    
+        <td style="font-style: oblique;"> 2</td>
+       <td> <img src="FLOGO/BBA-FC-logo-official-126x128.png" height="50" width="70"</td>
+       <td> </td>
+       <td> 0</td>
+      
+     </tr>
+      <td style="font-style: oblique;"> 3</td>
+       <td> <img src="FLOGO/B604D560-31E5-4536-800E-61A355BC45E9-128x128.jpeg" height="50" width="70"</td>
+        <td> </td>
+       <td> 0</td>
+      
+     </tr>
+      <td style="font-style: oblique;"> 4</td>
+       <td> <img src="FLOGO/Snipers-Logo-128x128.jpeg" height="50" width="70"</td>
+       <td> </td>
+       <td> 0</td>
+       
+     </tr>
+      <td style="font-style: oblique;"> 5</td>
+       <td> <img src="FLOGO/BEng-5-FC-logo-official-126x128.png" height="50" width="70"</td>
+        <td> </td>
+       <td> 0</td>
+    
+     </tr>
+     
+
+  </tbody>
+  </table>-->
+  <!---TOP ASSISTS  SECTION 
+<section class="Pranking">
+  <div class="Pranking">
+    <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: left; color:
+     #1f68bb; padding-top: 50px;"> TOP ASSISTS</h2>
+     <table class="styled-table"> 
+  <thead>
+    <tr>
+
+      <th> POSITION</th>
+      <th> TEAM</th>
+      <th> PLAYER</th>
+      <th>#ASSISTS </th>
+      
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="active-row" > 
+      <td style="font-style: oblique; color:orangered;"> 1</td>
+       <td> <img src="FLOGO/SOM-Stars-logo-official-126x128.png" height="50" width="70"</td>
+       <td  style="color: darkgoldenrod;"> </td>
+       <td  style="color: darkgoldenrod;"> 0</td>
+     
+        </tr>
+    
+        <td style="font-style: oblique;"> 2</td>
+       <td> <img src="FLOGO/BBA-FC-logo-official-126x128.png" height="50" width="70"</td>
+       <td> </td>
+       <td> 0</td>
+      
+     </tr>
+      <td style="font-style: oblique;"> 3</td>
+       <td> <img src="FLOGO/B604D560-31E5-4536-800E-61A355BC45E9-128x128.jpeg" height="50" width="70"</td>
+        <td> </td>
+       <td> 0</td>
+      
+     </tr>
+      <td style="font-style: oblique;"> 4</td>
+       <td> <img src="FLOGO/Snipers-Logo-128x128.jpeg" height="50" width="70"</td>
+       <td> </td>
+       <td> 0</td>
+       
+     </tr>
+      <td style="font-style: oblique;"> 5</td>
+       <td> <img src="FLOGO/BEng-5-FC-logo-official-126x128.png" height="50" width="70"</td>
+        <td> </td>
+       <td> 0</td>
+    
+     </tr>
+     
+
+  </tbody>
+
+  </div>
+</section>-->
+
+</body>
+
+</html>
+
