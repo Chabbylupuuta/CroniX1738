@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #333;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin based on your design preferences */
+    padding-top: 20px;
+} 
+
+#nextPageBtn {
+    background-color: #266d8b;
+    color: white;
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+#nextPageBtn:hover {
+    background-color: #697272fd;
+}
+
+
+
+.content h1,p {
+font-family: Georgia, 'Times New Roman', Times, serif;
+margin-top: auto;
+}
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(204, 205, 225, 0.8);
+  color: #333;
+  padding: 35px;
+}
+
+.slide .content h1 {
+  margin-bottom: 15px;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.5s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #000000;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #186690;
+  color: #000000;
+}
+
+@media(max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+/* Background images */
+.slide:first-child {
+  background: url('Images/gradient-dynamic-blue-lines-background_23-2148995756.avif') no-repeat center center/cover;
+}
+
+.slide:nth-child(2) {
+  background: url('./Images/Tongabullmain.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(3) {
+  background: url('./Images/namasiku4.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(4) {
+  background: url('./Images/RCC1.jpg') no-repeat center center/cover;
+}
+
+.slide:nth-child(5) {
+  background: url('./images/photo5.jpeg') no-repeat center center/cover;
+}
+
+.slide:nth-child(6) {
+  background: url('./images/photo6.jpeg') no-repeat center center/cover;
+}
