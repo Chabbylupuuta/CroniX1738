@@ -9,7 +9,7 @@
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(IMAGES/cbu1.jpeg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(IMAGES/views2.jpeg);
     background-position: center;
     background-size: cover;
     position: relative; 
@@ -79,10 +79,14 @@ nav {
 
 .text-box p {
     margin: 10px 0 30px; /* Adjusted margin and font size */
-    font-size: 14px; /* Adjusted font size */
+    font-size: 18px; /* Adjusted font size */
+    font-weight: 200;
     color: #fff; 
 }
-
+.logoindex img{
+    width: 120px;
+    position: left;
+}
 /* Hero button styling */
 .hero-btn {
     display: inline-block;
@@ -127,7 +131,7 @@ nav .fa {
         right: -200px;
         text-align: left;
         z-index: 2;
-        transition: 1s;
+        transition: 2s;
     }
 
     nav .fa {
@@ -197,6 +201,7 @@ nav .fa {
     margin-right: auto;
     width: 280px;
     font-size: 20px;
+     font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Styling for h3 elements inside course columns */
@@ -230,7 +235,10 @@ h3 {
     text-align: center;
     padding-top: 50px;
 }
-
+.campus p{
+    font-size: larger;
+    color: #000000;
+}
 /* Styling for individual campus columns */
 .campus-col {
     flex-basis: 32%;
@@ -311,6 +319,16 @@ h3 {
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: center;
+    padding-bottom: 20px;
+   
+}
+
+.facilities h1{
+ margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-bottom: 20px;
+   
 }
 .testimonials {
     width: 80%;
@@ -324,12 +342,19 @@ h3 {
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
-    background: #97929260;
+    background: #0a76d560;
     padding: 25px;
     cursor: pointer;
     display: flex;
 }
-
+.testimonials-col p{
+    color: #000000;
+    font-size: larger;
+}
+.testimonials p{
+    font-size: larger;
+    color: #000000;
+}
 .container {
     width: 500px;
     margin: 0 auto;
@@ -383,7 +408,7 @@ h3 {
     margin: 100px auto;
     width: 80%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(IMAGES/cbu4.jpeg);
+        url(IMAGES/cbu9.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -402,6 +427,36 @@ h3 {
         font-size: 24px;
     }
 }
+
+/* CTA1*/
+
+.cta1 {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(IMAGES/night.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta1 h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media (max-width: 700px) {
+    .cta1 h1 {
+        font-size: 24px;
+    }
+}
+
+
+
+/* CTA1*/
 
 .footer {
     width: 100%;
@@ -436,7 +491,28 @@ h3 {
     padding: 15px 40px;
     font-size: 18px;
     border: none;
-    border-radius: 10px;
+    bo.pagination {
+        text-align: center;
+        margin-top: 20px; /* Adjust the margin based on your design preferences */
+        padding-top: 20px;
+    } 
+    .pagination1{
+        text-align: center;
+        margin-top: 20px; /* Adjust the margin based on your design preferences */
+        padding-top: 20px;
+        
+    }
+    
+    #nextPageBtn {
+        background-color: #266d8b;
+        color: white;
+        padding: 15px 40px;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 1s;
+    }rder-radius: 10px;
     cursor: pointer;
     transition: background-color 1s;
 }
@@ -444,7 +520,6 @@ h3 {
 #nextPageBtn:hover {
     background-color: #697272fd;
 }
-
 
 
 
@@ -474,16 +549,83 @@ h3 {
 .sub-header {
     height: 60vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(IMAGES/cbu12.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(ACC_IMG/zibra*.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
     color: #fff;
 }
 
+
+
+
+
+
+
 .sub-header h1 {
     margin-top: 100px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
+/*   SUB HEDER ON THE COARSES 2*/
+.sub-header2 {
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(ACC_IMG/zebra2-1024x682.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+
+.sub-header3 {
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("ACC_IMG/Zebra1.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+.paragraph p{
+    color:black ;
+    font-size: larger;
+    padding-top: 30px;
+}
+.coursesh h1{
+    text-align: center;
+}
+.carousel-item img{
+    max-width: 350px;
+    /* Center the image horizontally */
+    display: block; /* Treat the image as a block-level element */
+    margin-left: auto; /* Automatically set left margin to push image to center */
+    margin-right: auto; /* Automatically set right margin to push image to center */
+     height: 530px;
+     width: 580px;
+     padding-top: 30px;
+     padding-bottom: 30px;
+}
+
+.buttun{
+    text-align: center;
+   right: 50%;
+    left: 50%;
+   
+ 
+}
+
+
+.wording p{
+    color: #000000;
+    font-size: 20px;
+}
+
+
+
 
 .about-us{
     width: 80%;
@@ -501,10 +643,17 @@ h3 {
 }
 .about-col h1 {
     padding-top: 0; font-family:'Times New Roman', Times, serif; font-style: oblique;
+    font-size: 30pt;
+    color: 00000;
 }
 
 .about-col p {
     padding: 15px 0 25px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+    font-size: 18px;
+    scroll-padding-right: 10px;
+    margin: 10px;
+    text-align: justify;
 }
 
 .red-btn {
@@ -701,8 +850,14 @@ h3 {
 	  .blog_img22 img{
 		  width:500px;
 	  }
-      
-      
+/* SPORTS*/      
+   .sports_words p{
+    color: whitesmoke;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: #000000;
+   }   
 
 
         
@@ -817,7 +972,14 @@ h3 {
 
 
       }
-
+.sportdisplay p{
+    margin: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    white-space: pre-wrap;
+   line-height: 1.5; /* Sets line height to 1.5 times the font size */
+    
+}
 
 
 
@@ -968,14 +1130,16 @@ h3 {
         font-weight: bolder;
     }  
 
-   .acc_img1 img {
+ .acc_img1 img{
     max-width: 350px;
-    /* Center the image horizontally */
-    display: block; /* Treat the image as a block-level element */
-    margin-left: auto; /* Automatically set left margin to push image to center */
-    margin-right: auto; /* Automatically set right margin to push image to center */
-}
+    margin: block;
+    padding-left: 40px;
+    position: center;
+      height: auto; /* Allow for image height variation */
+      margin-left: auto;
+   margin-right: auto;
 
+ }
 
 
     .acc_img11 img{
