@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>CRONIX_TECH</title>
+		<meta charset="utf-8">
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/css/main.css">
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+						<header id="header"><span class="avatar"><img src="images/logo.png" alt="" width="173" height="178"></span>
+	
+							<h1>The latest <strong>tech news</strong>, about the world’s best (and sometimes worst) hardware, apps, and much more. From top companies like Google and Apple to tiny startups vying for your attention, 
+							<strong>Cronix</strong> has the latest in what matters in technology daily</h1>
+						<ul class="icons"><li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
+							<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+					    </header><!-- Main -->
+
+						<section id="main"> 
+							<button id="popoverBtn">FUN FACTS!</button>
+							<div id="popover" class="popover"></div>   
+						<section>
+							
+							<div>
+									
+								<a href="https://www.bing.com/search?FORM=SNAPST&q=SpaceX&filters=fcid%3a%220-933373ae-a0fb-d9d6-516f-e9e69fd47d8e%22+sid%3a%22627fa43a-d963-2c69-46ae-de521d27f9b9%22" target="_blank">
+									    <img src="images/thumbs/Elon.PNG" alt="" width="346" height="494"><h3>Elon Musk's projects and innovations</h3>
+								</a>		
+									
+								<a href="https://technologymagazine.com/articles/how-walmart-technology-is-shaping-the-shopping-experience" target="_blank">
+										<img src="images/thumbs/shop.PNG" alt="" width="346" height="239"><h3>How Walmart Technology is Shaping the Shopping Experience</h3>
+								</a>
+							</div>
+							
+							<div>
+								<a href="https://technologymagazine.com/articles/top-10-quantum-computing-companies" target="_blank">
+										<img src="images/thumbs/Top10.PNG" alt="" width="346" height="239"><h3>Top 10: Quantum computing companies</h3>
+									</a>
+									
+									<a href="https://www.msn.com/en-xl/news/other/us-army-finds-solution-to-its-stinger-missile-stock-problem/ss-BB1hND6I?ocid=msedgntp&pc=U531&cvid=eccf24e9167940a49c6dab80572cbe5c&ei=39#image=4" target="_blank">
+										<img src="images/thumbs/Army.PNG" alt="" width="346" height="339"><h3>US Army finds solution to its Stinger missile stock problem</h3>
+									</a>
+
+									<a href="images/fulls/05.jpg">
+										<img src="images/thumbs/05.jpg" alt="" width="346" height="299"><h3>Lorem ipsum dolor sit amet</h3>
+									</a>
+							</div>
+								
+							<div>
+									<a href="https://www.bing.com/videos/search?q=artifical+intelligence&qpvt=artifical+intelligence&FORM=VDRE" target="_blank">
+										<img src="images/thumbs/OIP.jpg" alt="" width="346" height="339"><h3>Learn everything there is to know about AI</h3>
+									</a>
+									<a href="images/fulls/07.jpg">
+										<img src="images/thumbs/07.jpg" alt="" width="346" height="504"><h3>Lorem ipsum dolor sit amet</h3>
+									</a>
+							</div>
+							
+						</section></section>
+							         <button id="popoverBtn">FUN FACTS!</button>
+									<div id="popover" class="popover"></div>
+			</div>
+		<div class="copyright">
+			Made by: @LONDON. . !
+		</div>
+		<!-- Scripts -->
+		<script>
+			const funFacts = [
+			  "Did you know that the first computer virus was created in 1983 and was called the Elk Cloner? It infected Apple II computers through floppy disks and displayed a humorous poem.",
+			  "Did you know that the concept of cloud computing dates back to the 1960s? It was first introduced by J.C.R. Licklider, who envisioned a global interconnected network of computers that would allow users to access data and programs from anywhere.",
+			  "Did you know that the term Wi-Fi doesn't actually stand for anything? It's simply a brand name coined by a marketing agency. However, some jokingly suggest that it stands for Wireless Fidelity.",
+			  "Did you know that the first mobile phone call was made on April 3, 1973, by Motorola engineer Martin Cooper? He called his rival at Bell Labs and told him he was speaking from a real cellular telephone. The phone he used weighed about 2.5 pounds!",
+			  "Did you know that the first webcam was created at the University of Cambridge to monitor a coffee pot? In 1991, researchers set up a camera to keep an eye on the coffee levels in their break room, allowing them to see if there was coffee available without having to leave their desks.",
+			  "Did you know that the QWERTY keyboard layout was designed in the 1870s to prevent jamming on mechanical typewriters? The layout was strategically arranged to slow down typing and prevent commonly used letter pairs from being struck in quick succession, thereby reducing the likelihood of jams.",
+			  "Did you know that the term hackathon is a portmanteau of hack and marathon? It refers to an event where programmers, developers, and designers collaborate intensively on software projects over a short period, usually 24 to 48 hours, to create innovative solutions or prototypes."
+			];
+		  
+			const popoverBtn = document.getElementById("popoverBtn");
+			const popover = document.getElementById("popover");
+		  
+			popoverBtn.addEventListener("click", () => {
+			  const randomIndex = Math.floor(Math.random() * funFacts.length);
+			  const randomFact = funFacts[randomIndex];
+			  popover.textContent = randomFact;
+			  popover.style.display = "block";
+			  
+			  setTimeout(() => {
+				popover.style.display = "none";
+			  }, 7000); // Hide after 7 seconds
+			});
+		  </script>
+			<script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery.poptrox.min.js"></script><script src="assets/js/skel.min.js"></script><script src="assets/js/main.js"></script></body></html>
